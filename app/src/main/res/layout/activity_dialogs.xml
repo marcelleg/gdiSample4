@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="ALERT"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:background="@android:color/holo_blue_bright"
+        android:onClick="onAlertDialogClick"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="SINGLE CHOICE LIST"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:background="@android:color/holo_blue_bright"
+        android:onClick="onSingleChoiceClick" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Date Picker"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:background="@android:color/holo_blue_bright"
+        android:onClick="onDatePickerClick" />
+</LinearLayout>
