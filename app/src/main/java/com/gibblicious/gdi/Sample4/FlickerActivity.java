@@ -111,6 +111,7 @@ public class FlickerActivity extends AppCompatActivity {
         final ProgressBar progressBar = (ProgressBar) findViewById(R.id.progress_bar);
         progressBar.setVisibility(View.VISIBLE);
 
+        adapter.clearImages();
         Map<String, String> queryMap = buildQuery(keyword);
 
         flicker.getPhotos(queryMap).enqueue(new Callback<PhotoResponse>() {
@@ -150,6 +151,7 @@ public class FlickerActivity extends AppCompatActivity {
         queryMap.put("format", "json");
         queryMap.put("method", "flickr.photos.search");
         queryMap.put("nojsoncallback", "1");
+        queryMap.put("per_page", "10");
         return queryMap;
 
     }

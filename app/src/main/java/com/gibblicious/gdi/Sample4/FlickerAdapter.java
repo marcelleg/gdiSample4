@@ -54,6 +54,11 @@ public class FlickerAdapter extends RecyclerView.Adapter<FlickerAdapter.ViewHold
         notifyDataSetChanged();
     }
 
+    public void clearImages() {
+        imageList.clear();
+        notifyDataSetChanged();
+    }
+
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
         public ImageView iv;
