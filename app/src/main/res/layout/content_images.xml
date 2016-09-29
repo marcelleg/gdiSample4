@@ -12,13 +12,22 @@
     tools:context="com.gibblicious.gdi.Sample4.FlickerActivity"
     tools:showIn="@layout/activity_flicker">
 
+    <Button
+        android:id="@+id/button_dialogs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SHOW ME SOME DIALOGS"
+        android:layout_margin="5dp"
+        android:onClick="onDialogClick"/>
+
     <EditText
         android:id="@+id/text_keyword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="enter keyword"
         android:inputType="text"
-        android:padding="16dp"/>
+        android:padding="16dp"
+        android:layout_below="@+id/button_dialogs"/>
 
     <ProgressBar
         style="@android:style/Widget.ProgressBar.Large"
