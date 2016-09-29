@@ -40,6 +40,7 @@ public class FlickerAdapter extends RecyclerView.Adapter<FlickerAdapter.ViewHold
         Picasso.with(context)
                 .load(url)
                 .resize(1000, 800)
+                .centerCrop()
                 .into(holder.iv);
     }
 
